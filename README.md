@@ -6,6 +6,7 @@ Timnigma is a suite of [Rainmeter](https://www.rainmeter.net/) skins. It is base
 
 * A familiarity with Rainmeter and  version 4.3 or higher.
 * Many of the skins require [HWiNFO](https://www.hwinfo.com/) version 7.02 or later.
+* The weather skin requires an API key from [OpenWeatherMap](https://home.openweathermap.org/users/sign_up) and the [PowershellRM Plugin](https://khanhas.gitbook.io/powershellrm/)
 * PowerShell - either PowerShell.exe or pwsh.exe.
 * An editor such as Notepad++ or Visual Studio Code.
 * A fair amount of patience and willingness to tweak the code.
