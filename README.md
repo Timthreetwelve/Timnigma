@@ -2,7 +2,9 @@
 Timnigma is a suite of [Rainmeter](https://www.rainmeter.net/) skins. It is based on the [Enigma](https://www.kaelri.com/projects/enigma/) suite.   
 
 
-![GitHub](https://img.shields.io/github/license/Timthreetwelve/Timnigma?style=plastic) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Timthreetwelve/Timnigma?style=plastic) ![GitHub all releases](https://img.shields.io/github/downloads/Timthreetwelve/Timnigma/total?style=plastic)  
+[![GitHub](https://img.shields.io/github/license/Timthreetwelve/Timnigma?style=plastic)](https://github.com/Timthreetwelve/Timnigma/blob/main/LICENSE)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Timthreetwelve/Timnigma?style=plastic)](https://github.com/Timthreetwelve/Timnigma/releases/latest) 
+[![GitHub all releases](https://img.shields.io/github/downloads/Timthreetwelve/Timnigma/total?style=plastic)](https://github.com/Timthreetwelve/Timnigma/releases) 
 
 #### Prerequisites
 
