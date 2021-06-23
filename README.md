@@ -2,6 +2,8 @@
 Timnigma is a suite of [Rainmeter](https://www.rainmeter.net/) skins. It is based on the [Enigma](https://www.kaelri.com/projects/enigma/) suite.   
 
 
+![GitHub](https://img.shields.io/github/license/Timthreetwelve/Timnigma?style=plastic) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Timthreetwelve/Timnigma?style=plastic) ![GitHub all releases](https://img.shields.io/github/downloads/Timthreetwelve/Timnigma/total?style=plastic)  
+
 #### Prerequisites
 
 * A familiarity with Rainmeter and  version 4.3 or higher.
@@ -36,6 +38,3 @@ Timnigma is a suite of [Rainmeter](https://www.rainmeter.net/) skins. It is base
 * Don't be afraid to experiment.
 * You may need to associate .inc files with your editor.
 * If you are using Visual Studio Code, you may want to install the Rainmeter Support extension.
-
-
-
