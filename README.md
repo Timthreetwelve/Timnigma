@@ -1,4 +1,4 @@
-## Timnigma
+# Timnigma
 Timnigma is a suite of [Rainmeter](https://www.rainmeter.net/) skins. It is based on the [Enigma](https://www.kaelri.com/projects/enigma/) suite.   
 
 
@@ -6,7 +6,7 @@ Timnigma is a suite of [Rainmeter](https://www.rainmeter.net/) skins. It is base
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Timthreetwelve/Timnigma?style=plastic)](https://github.com/Timthreetwelve/Timnigma/releases/latest) 
 [![GitHub all releases](https://img.shields.io/github/downloads/Timthreetwelve/Timnigma/total?style=plastic)](https://github.com/Timthreetwelve/Timnigma/releases) 
 
-#### Prerequisites
+### Prerequisites
 
 * A familiarity with Rainmeter and  version 4.3 or higher.
 * Many of the skins require [HWiNFO](https://www.hwinfo.com/) version 7.02 or later.
@@ -15,7 +15,7 @@ Timnigma is a suite of [Rainmeter](https://www.rainmeter.net/) skins. It is base
 * An editor such as Notepad++ or Visual Studio Code.
 * A fair amount of patience and willingness to tweak the code.
 
-#### Configuring Timnigma
+### Configuring Timnigma
 
 * Install the Timnigma .rmskin file.
 * Load the Background skin.
@@ -26,7 +26,7 @@ Timnigma is a suite of [Rainmeter](https://www.rainmeter.net/) skins. It is base
 * Load the HWiNFO skin. It will be red if HWiNFO isn't configured correctly. Left-click to show the menu which has an entry to show the registry values.
 * 👉 **NEW** 👈 Use the HWiNFO VSB Viewer to find the Index numbers for HWiNFO sensors. The  HWiNFO VSB Viewer is located in the _HWiNFOViewer folder and is accessible as a menu item in the HWiNFO and Background skins.
 
-#### Features
+### Features
 
 * Additional information is available in a tooltip when hovering the mouse over any meter.
 * Many meters have actions available on a context menu when left-clicking on the meter.
@@ -34,7 +34,7 @@ Timnigma is a suite of [Rainmeter](https://www.rainmeter.net/) skins. It is base
 * Easily adjust the transparency of the background bar by scrolling the mouse wheel over the "hamburger" menu at the right end of the bar.
 * Easily adjust the volume by scrolling the mouse wheel while hovering over the Volume meter.
 
-#### Final Thoughts
+### Final Thoughts
 
 * This configuration works on my machine. It may require additional tweaks on your machine.
 * Don't be afraid to experiment.
