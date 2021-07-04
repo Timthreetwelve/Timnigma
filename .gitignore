@@ -2,3 +2,4 @@ Test/
 .vscode
 Timnigma.code-workspace
 _Settings/usersettings.json
+*.bak

@@ -5,7 +5,10 @@
 # Any variable passed back to the skin must be $Global.
 # The $RmAPI statements require the PowershellRM plugin.
 #---------------------------------------------------------------
-
+# Change Log:
+#
+# July 1st, 2021:  Added dew point.
+#
 Function Parse {
     # Zip code
     $zip = $RmAPI.VariableStr("WxLocation", "unknown")
@@ -32,7 +35,7 @@ Function Parse {
 
     # Format the JSON and write it to a file in the temp directory
     try {
-        $json = Format-Json($in)
+        $json = Format-Json -json $in
         Set-Content -Path $jsonFile -Value $json
     }
     catch {
@@ -67,6 +70,9 @@ Function Parse {
     # Humidity
     $humidity = $WXData.main.humidity
 
+    # Dew Point
+    $dewPoint = ConvertTo-DewPoint -tempF $WxData.main.temp -humid $WxData.main.humidity
+
     # Barometric pressure
     $pressure = $WXData.main.pressure
     # Convert pressure to inches of mercury
@@ -77,7 +83,7 @@ Function Parse {
     $windSpeed = [Math]::Round($WXData.wind.speed, 0)
     $windGust = [Math]::Round($WXData.wind.gust, 0)
     $windDirDeg = $WXData.wind.deg
-    $windDirTxt = Convert-DegreeToDirection($windDirDeg)
+    $windDirTxt = Convert-DegreeToDirection -dir $windDirDeg
 
     # Describe the wind direction according to the WindDegrees skin variable
     $wd = $RmAPI.VariableStr("WindDegrees", "N").ToUpper().Substring(0, 1)
@@ -94,8 +100,8 @@ Function Parse {
     $weatherDesc = (Get-Culture).TextInfo.ToTitleCase($WXData.weather.description)
 
     # Sun rise and set
-    $sunRise = Convert-Timestamp($WxData.sys.sunrise)
-    $sunSet = Convert-Timestamp($WxData.sys.sunset)
+    $sunRise = Convert-Timestamp -UnixDate $WxData.sys.sunrise
+    $sunSet = Convert-Timestamp -UnixDate $WxData.sys.sunset
     $now = Get-Date
     if ($now.ticks -le $sunRise.ticks) {
         $srPhrase = "will be at {0}" -f $sunRise.ToShortTimeString()
@@ -111,7 +117,7 @@ Function Parse {
     }
 
     # Last update
-    $lastUpdate = Convert-Timestamp($WXData.dt)
+    $lastUpdate = Convert-Timestamp -UnixDate $WXData.dt
     $luPhrase = "{0} at {1}" -f $lastUpdate.ToShortDateString(), $lastUpdate.ToShortTimeString()
 
     # New StringBuiler object
@@ -128,6 +134,7 @@ Function Parse {
         $sb.AppendLine($windphrase)
     }
     $sb.AppendLine("The humidity is $humidity%")
+    $sb.AppendLine("The dew point is $dewPoint$tempSuffix")
     $sb.AppendLine("The pressure is $pressure $pressureSuffix")
     $sb.AppendLine("Visiblity is $visibility miles")
     $sb.AppendLine("Sunrise $srPhrase")
@@ -138,11 +145,20 @@ Function Parse {
 
     $log = $RmAPI.VariableStr("Logging", "N").ToUpper().Substring(0, 1)
     if ($log -eq "Y") {
-        Write-ToLog($sb.ToString())
+        Write-ToLog -details $sb.ToString()
     }
 }
 
 #################### Helper functions ####################
+
+function ConvertTo-DewPoint ($tempF, $humid ) {
+    # - Formula based on https://cals.arizona.edu/azmet/dewpoint.html
+    $tempC = ($tempF - 32 ) / 1.8
+    $x = ([Math]::Log($humid / 100) + ((17.27 * $tempC) / (237.3 + $tempC))) / 17.27
+    $dewC = (237.3 * $x) / (1 - $x)
+    $dewPoint = [Math]::Round((($dewC * 1.8) + 32), 0)
+    return $dewPoint
+}
 
 Function Convert-Timestamp ($UnixDate) {
     $dt = [timezone]::CurrentTimeZone.ToLocalTime(([datetime]'1/1/1970').AddSeconds($UnixDate))
