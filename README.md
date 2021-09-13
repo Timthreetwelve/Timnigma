@@ -25,6 +25,7 @@ Timnigma is a suite of [Rainmeter](https://www.rainmeter.net/) skins. It is base
 * Instead of updating individual meters, update the HWiNFO.inc file (located in the _IncludeFile folder) with the index values obtained when configuring the sensors. Use the Edit HWiNFO button in the settings app.
 * Load the HWiNFO skin. It will be red if HWiNFO isn't configured correctly. Left-click to show the menu which has an entry to show the registry values.
 * 👉 **NEW** 👈 Use the HWiNFO VSB Viewer to find the Index numbers for HWiNFO sensors. The  HWiNFO VSB Viewer is located in the _HWiNFOViewer folder and is accessible as a menu item in the HWiNFO and Background skins.
+* The most current version of HWiNFO VSB Viewer can be found [here](https://github.com/Timthreetwelve/HWiNFO-VSB-Viewer).
 
 ### Features
 
