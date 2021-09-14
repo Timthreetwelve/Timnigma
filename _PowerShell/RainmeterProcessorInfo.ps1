@@ -14,4 +14,5 @@ foreach ($proc in $procs) {
     Write-Output "$($proc.Name)"
     Write-Output "$($proc.Caption)"
     Write-Output "Manufacturer:  $($proc.Manufacturer)"
+    Write-Output ""
 }
