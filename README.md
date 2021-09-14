@@ -3,9 +3,9 @@
 [![GitHub](https://img.shields.io/github/license/Timthreetwelve/Timnigma?style=plastic)](https://github.com/Timthreetwelve/Timnigma/blob/main/LICENSE)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Timthreetwelve/Timnigma?style=plastic)](https://github.com/Timthreetwelve/Timnigma/releases/latest) 
 [![GitHub all releases](https://img.shields.io/github/downloads/Timthreetwelve/Timnigma/total?style=plastic)](https://github.com/Timthreetwelve/Timnigma/releases) 
-![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/timthreetwelve/timnigma/latest?style=plastic)
-![GitHub last commit](https://img.shields.io/github/last-commit/timthreetwelve/timnigma?style=plastic)
-![Joy](https://img.shields.io/badge/Enjoyment-100%25-blueviolet?style=plastic)
+[![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/timthreetwelve/timnigma/latest?style=plastic)](https://github.com/Timthreetwelve/Timnigma/commits/main)
+[![GitHub last commit](https://img.shields.io/github/last-commit/timthreetwelve/timnigma?style=plastic)](https://github.com/Timthreetwelve/Timnigma/commits/main)
+![](https://img.shields.io/badge/joy-100%25-blueviolet?style=plastic)
 
 Timnigma is a suite of [Rainmeter](https://www.rainmeter.net/) skins. It is based on the [Enigma](https://www.kaelri.com/projects/enigma/) suite.  
 
