@@ -5,6 +5,7 @@
 [![GitHub all releases](https://img.shields.io/github/downloads/Timthreetwelve/Timnigma/total?style=plastic)](https://github.com/Timthreetwelve/Timnigma/releases) 
 ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/timthreetwelve/timnigma/latest?style=plastic)
 ![GitHub last commit](https://img.shields.io/github/last-commit/timthreetwelve/timnigma?style=plastic)
+![Joy](https://img.shields.io/badge/Enjoyment-100%25-blueviolet?style=plastic)
 
 Timnigma is a suite of [Rainmeter](https://www.rainmeter.net/) skins. It is based on the [Enigma](https://www.kaelri.com/projects/enigma/) suite.  
 
