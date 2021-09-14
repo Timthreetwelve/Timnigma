@@ -10,6 +10,9 @@ FontSize=10
 ; Tooltip Type - 0=Normal 1=Balloon
 TTType=1
 
+; Tooltip Visibility - 0=Visible 1=Hide
+TTHide=0
+
 ; PowerShell executable - change to powershell.exe if pwsh is not available
 PowerShell=pwsh.exe
 

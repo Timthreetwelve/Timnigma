@@ -4,18 +4,18 @@
 #---------------------------------------------------------------
 # Change Log:
 #
-# July 4th, 2021:  Added additional information. Handle null values when page file is system managed.
+# July 5th, 2021:  Added additional information.
+#                  Handle null values when page file is system managed.
 #
 
 # From Win32_PageFileUsage
 $PFUsage = (Get-CimInstance -ClassName Win32_PageFileUsage | Select-Object -Property *)
 $CurrentSize = [math]::Round(($PFUsage.AllocatedBaseSize / 1024), 2)
 $CurrentUsage = [math]::Round(($PFUsage.CurrentUsage / 1024), 2)
-$PercentUsage = [math]::Round(($PFUsage.CurrentUsage / $PFUsage.AllocatedBaseSize) * 100, 0)
+$PercentUsage = [math]::Round(($PFUsage.CurrentUsage / $PFUsage.AllocatedBaseSize) * 100, 1)
 $PeakUsage = [math]::Round(($PFUsage.PeakUsage / 1024), 2)
-$PercentPeak = [math]::Round(($PFUsage.PeakUsage / $PFUsage.AllocatedBaseSize) * 100, 0)
+$PercentPeak = [math]::Round(($PFUsage.PeakUsage / $PFUsage.AllocatedBaseSize) * 100, 1)
 $PFName = $PFUsage.Name
-$InstallDate = $PFUsage.InstallDate
 $TempPage = $PFUsage.TempPageFile
 $Status = $PFUsage.Status
 
@@ -51,9 +51,6 @@ elseif ($null -ne $PFName2) {
 }
 else {
     Write-Output "Filename:  Unable to determine"
-}
-if ($null -ne $InstallDate) {
-    Write-Output "Created:  $InstallDate"
 }
 Write-Output "System Managed:  $SysManaged"
 Write-Output "Temporary:  $TempPage"
