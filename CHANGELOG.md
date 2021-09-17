@@ -9,6 +9,8 @@
   - Added maximum memory used to tooltip.
   - Added context menu item to reset maximum memory value.
   - Added context menu item to toggle extended information in tooltip.
+- Recycle Bin skins
+  - Changed SepChar to a Unicode character value to be consistent with other skins.
 - Folder Info skins
   - Changed SepChar to a Unicode character value to be consistent with other skins.
 - Uptime skin
