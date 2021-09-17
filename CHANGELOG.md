@@ -9,6 +9,7 @@
   - CPU meter will now show 1 decimal place when lower than 10%.
   - Added context menu item to toggle top process in tooltip.
   - Added context menu item to toggle extended CPU information.
+  - This skin now requires RainmeterProcessorInfo.ps1 in the _PowerShell folder
 - Memory skins
   - Added maximum memory used to tooltip.
   - Added context menu item to reset maximum memory value.
