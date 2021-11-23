@@ -34,3 +34,6 @@
   - Added ToolTIpHidden property and set it to the value of the TTHide variable.
 - HWiNFO VSB Viewer
   - Updated to version 0.1.4.
+- Time & Date
+  - Added formatting options to context menu. 
+
