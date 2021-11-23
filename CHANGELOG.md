@@ -47,3 +47,17 @@
   - Toggle bar visibility.
   - This skin now requires Rainmeter 4.5.1 or later.
 - New Power/Battery skin.
+- Memory skin
+  - Toggle bar visibility.
+  - Removed variant.
+- Page file skin
+  - Toggle extended info.
+  - Toggle bar visibility.
+  - Removed variant.
+- CPU Usage skin
+  - Toggle bar visibility.
+  - Removed variant.
+- Recycle Bin Skin
+  - Toggle size/items display.
+  - Remove variant.
+  - Add context menu items for CCleaner and Disk Cleanup.
