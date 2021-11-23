@@ -46,11 +46,11 @@
   - Toggle extended network info.
   - Toggle bar visibility.
   - This skin now requires Rainmeter 4.5.1 or later.
-- New Power/Battery skin.
+- New Power/Battery skin. ✨
 - Memory skin
   - Toggle bar visibility.
   - Removed variant.
-- Page file skin
+- Page File skin
   - Toggle extended info.
   - Toggle bar visibility.
   - Removed variant.
@@ -61,3 +61,7 @@
   - Toggle size/items display.
   - Remove variant.
   - Add context menu items for CCleaner and Disk Cleanup.
+- Fan Speed skins
+  - Toggle bar visibility.
+  - Reset minimum and maximum rpm values.
+  - Variants for 1 or 2 fans.
