@@ -65,3 +65,6 @@
   - Toggle bar visibility.
   - Reset minimum and maximum rpm values.
   - Variants for 1 or 2 fans.
+- Drive SMART Info skins
+  - Toggle extended information.
+  - Updated logic in PowerShell script.
