@@ -5,6 +5,7 @@
 - Going forward version numbers in skins will be the date they were last updated.
 - The Joke skin has been removed. (official-joke-api.appspot.com has been down for a while.) ☹
 - New Cat Facts skin. ✨
+  - Added copy to clipboard functionality
 - CPU usage skins
   - CPU meter will now show 1 decimal place when lower than 10%.
   - Added context menu item to toggle top process in tooltip.
@@ -35,5 +36,14 @@
 - HWiNFO VSB Viewer
   - Updated to version 0.1.4.
 - Time & Date
-  - Added formatting options to context menu. 
-
+  - Added formatting options to context menu.
+- WiFi skin
+  - More resilient to network changes.
+  - Warns if network is not secure.
+  - Toggle bar visibility.
+- Network skin
+  - More resilient to network changes.
+  - Toggle extended network info.
+  - Toggle bar visibility.
+  - This skin now requires Rainmeter 4.5.1 or later.
+- New Power/Battery skin.
