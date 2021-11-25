@@ -1,6 +1,6 @@
 # Changelog 📝
 
-## Changes since last release
+## Changes in release 4.0
 
 - Going forward version numbers in skins will be the date they were last updated.
 - The Joke skin has been removed. (official-joke-api.appspot.com has been down for a while.) ☹
