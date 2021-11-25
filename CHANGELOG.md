@@ -68,3 +68,25 @@
 - Drive SMART Info skins
   - Toggle extended information.
   - Updated logic in PowerShell script.
+- GPU skins
+  - GPU skins are not one-size-fits-all. Unless your GPU matches mine you will need to make adjustments.
+  - Added variant specific to Intel(R) UHD Graphics 630.
+  - Added variant specific to AMD Radeon(TM) Vega 8.
+- CPU Speed skin
+  - Added min & max freq values.
+  - Toggle bar visibility.
+  - Removed variant.
+  - CPU_Speed.ini (non-HWiNFO version) will no longer be updated.
+- Background Bar skin
+  - Added context menu item to open Rainmeter log.
+- Temperature skin
+  - Added context menu item to toggle visiblilty of individual core temps.
+  - Toggle bar visibility.
+  - Fixed display of °C.
+-  Disk Activity skins
+  - Disk Activity skins now use the PowershellRM plugin.
+  - Added variant specific to 1 drive.
+  - Added variant specific to 3 drives.
+  - Toggle bar visibility.
+  - Toggle top process info.
+  - Removed unneeded variants.
