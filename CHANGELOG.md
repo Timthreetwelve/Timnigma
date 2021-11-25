@@ -83,10 +83,11 @@
   - Added context menu item to toggle visiblilty of individual core temps.
   - Toggle bar visibility.
   - Fixed display of °C.
--  Disk Activity skins
+- Disk Activity skins
   - Disk Activity skins now use the PowershellRM plugin.
   - Added variant specific to 1 drive.
   - Added variant specific to 3 drives.
   - Toggle bar visibility.
   - Toggle top process info.
   - Removed unneeded variants.
+
